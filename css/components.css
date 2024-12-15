@@ -1,0 +1,246 @@
+
+*{
+  font-family: "Jost", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.box {
+  width: 200px;  /* Set the width for the gradient box */
+  height: 400px;  /* Set the height for the gradient box */
+  background-image: radial-gradient(#97FED9,#1a1a1a 50%);
+ border-radius: 100000px;  /* Optional: rounded corners */
+  opacity: 0.2;  /* Low opacity for the gradient effect */
+}
+
+
+
+
+
+/*-------------------------------------
+  1. Button CSS
+--------------------------------------*/
+.ui.button.circle {
+  border-radius: 50%;
+}
+
+.ui.button.round {
+  border-radius: var(--radius-xs);
+}
+
+/* Base styling for buttons */
+.button-container {
+  display: flex;
+  gap: 20px; 
+  justify-content: center; 
+  margin-bottom: 20px; 
+  margin-top: 60px; 
+}
+.hover-btn {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Adding the green line on hover */
+.hover-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #28e98c;
+  transition: width 0.3s ease;
+}
+
+/* When hovered, extend the green line */
+.hover-btn:hover::after {
+  width: 100%;
+}
+
+/* Basic styling for sections */
+.section {
+  padding: 50px;
+  margin-top: 30px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+
+.ui.button.size-xs {
+  height: 48px;
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
+}
+
+.ui.button.size-sm {
+  height: 60px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 18px;
+}
+
+#contactModal  {
+    border: 2px solid #454545;   
+    padding: 20px;             
+    background-color: #454545; 
+    width: fit-content;        
+    margin: 20px;              
+    border-radius: 8px;        
+  
+}
+#rounded-rectangle {
+  border: 2px solid #454545;   
+  padding: 40px;             
+  background-color: #f0f0f0; 
+  width: fit-content;        
+  margin: 20px;              
+  border-radius: 8px;       
+}
+
+
+.ui.button.outline.blue_gray_900 {
+  color: var(--white_a700);
+  border: 1px solid var(--blue_gray_900);
+}
+
+.ui.button.fill.teal_a400 {
+  background-color: var(--teal_a400);
+  color: var(--black_900_01);
+}
+
+.ui.button {
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/*-------------------------------------
+  2. Text CSS
+--------------------------------------*/
+.ui.text.size-textxs {
+  font-size: 16px;
+  font-weight: 400;
+  @media only screen and (max-width: 1440px) {
+    font-size: 13px;
+  }
+}
+
+.ui.text.size-texts {
+  font-size: 18px;
+  font-weight: 400;
+  @media only screen and (max-width: 1440px) {
+    font-size: 15px;
+  }
+}
+
+.ui.text {
+  color: var(--white_a700);
+  font-family: DM Sans;
+}
+
+/*-------------------------------------
+  3. Heading CSS
+--------------------------------------*/
+.ui.heading.size-headingxs {
+  font-size: 18px;
+  font-weight: 700;
+  @media only screen and (max-width: 1440px) {
+    font-size: 15px;
+  }
+}
+
+.ui.heading.size-headings {
+  font-size: 20px;
+  font-weight: 600;
+  @media only screen and (max-width: 1440px) {
+    font-size: 17px;
+  }
+}
+
+.ui.heading.size-headingmd {
+  font-size: 32px;
+  font-weight: 600;
+  @media only screen and (max-width: 1440px) {
+    font-size: 27px;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 28px;
+  }
+}
+
+.ui.heading.size-textmd {
+  font-size: 22px;
+  font-weight: 500;
+  @media only screen and (max-width: 1440px) {
+    font-size: 18px;
+  }
+}
+
+.ui.heading.size-textlg {
+  font-size: 48px;
+  font-weight: 500;
+  @media only screen and (max-width: 1440px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    font-size: 44px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 38px;
+  }
+}
+
+.ui.heading.size-headinglg {
+  font-size: 72px;
+  font-weight: 700;
+  @media only screen and (max-width: 1440px) {
+    font-size: 72px;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    font-size: 48px;
+  }
+}
+
+.ui.heading {
+  color: var(--white_a700);
+  font-family: Futura PT;
+}
+
+/*-------------------------------------
+  4. Container CSS
+--------------------------------------*/
+.container-xs {
+  max-width: 1290px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-sm {
+  max-width: 1320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
